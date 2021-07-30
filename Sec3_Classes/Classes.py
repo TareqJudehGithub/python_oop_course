@@ -38,6 +38,20 @@ Guidelines:
 
 
 """
-
+print('')
+# Backpack class
 class Backpack:
-     pass
+     def __init__(self, color, price, weight = 5):
+          self.color = color
+          self.price = price
+          self.weight = weight
+          self.backpack_details()
+
+     def backpack_details(self):
+          """Backpack details"""
+          print(f'Backpack details:\nColor: {self.color}\nPrice: {self.price}\nWeight: {self.weight}')
+
+
+travel_backpack = Backpack('Black', '$25')
+
+

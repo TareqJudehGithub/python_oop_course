@@ -31,8 +31,13 @@ Guidelines:
           # class body
           # class attributes
           # __init__()
-          #
           
+     - The __init__() method is called automatically when an instance is 
+       created to initialize the values of the attributes of the instance.
+
+
+
+  
           - pass keyword is used to fill the body of class/function.
      
 

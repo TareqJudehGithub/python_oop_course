@@ -11,6 +11,12 @@ Instance
  - Default argument for an attribute parameter must be the last parameter in the 
    list of parameter in the __init__ definition.
 
+ - Instance attributes
+   - They belong to the instances.
+   - Each instance has a separate copy of each instance attribute.
+   - Changing their value only affects a particular instance and the others 
+   remain unchanged.
+
 """
 
 # Below are examples on how we can define instance attributes

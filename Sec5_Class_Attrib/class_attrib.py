@@ -1,10 +1,15 @@
 """
 Class Attribute
  - Class attribute belong to the class.
- - There is only one copy of each class attribute.
- - Class attributes Are written before __init__ dunder
+ - Class attribute does not include self parameter; because class attribute 
+   belongs to the class, while self belongs to the instance created from the 
+   class.
+ - All instances share the class attributes.
+ - All instances of the class have access to that class attributes.
  - Class attribute are shared for all instances. So changing their value affects 
    all instances since they all take the value from the same source.
+ - There is only one copy of each class attribute.
+ - Class attributes Are written before (above) __init__ dunder method.
 
 """
 

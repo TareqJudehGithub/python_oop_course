@@ -1,13 +1,16 @@
 """
 Instance
- - An object created (instantiated) from the class
+ - An object created (instantiated) from the class.
  - Instances have attributes belonging to their object.
  - Attributes have UNIQUE values for their own instances (objects).
- - __init__()  is a defind method to initialize the values of the att of
-   of the instance created.
+ - __init__()  is a defind instance method. 
+ - __init__() method is called automatically when an instance is created to 
+   initialize the values of the attributes of the instance.
  - self is the first paramater in __init__().
+ - self refers to the instance/object that is being created.
  - self is generic way of referring to the current instance of the class.
- - method in a class is similar to a function.
+ - methods in a class are similar to a function, they come after the __init__ method
+   in order.
  - Default argument for an attribute parameter must be the last parameter in the 
    list of parameter in the __init__ definition.
 
@@ -24,7 +27,7 @@ print('House')
 # House class
 class House:
      def __init__(self, price):    # parameters  
-          # attributes
+          #  instance attributes 
           self.price = price
 
 print('==============================================')
@@ -37,9 +40,10 @@ class Circle:
           self.radius = radius
 
 
-# instance will use default parameter filled in the attributes.
-my_circle = Circle('Blue')
-print(my_circle.radius)
+# instance will use default parameter filled in the attributes (radius in our
+# example above).
+my_circle = Circle(color='Blue')
+print(my_circle.radius)  # dot notation
 
 # custom argument
 my_circle = Circle('Blue', 10)

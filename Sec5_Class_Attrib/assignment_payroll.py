@@ -62,3 +62,4 @@ employees = [jack, isabel, nora]
 
 # Function call - Passing the list of instances as argument
 calculate_payroll(employees)
+

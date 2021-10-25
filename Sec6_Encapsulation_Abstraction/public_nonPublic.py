@@ -35,7 +35,8 @@ car_1 = Car("Porsche", "911 Carrera", 2021)
 # We can have access to access and even modify instance attributes (public):
 car_1.model = "911"
 
-print(car_1)
+# access to non-public attribute
+print(car_1._year)
 
 
 
